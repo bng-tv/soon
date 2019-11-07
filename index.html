@@ -1,22 +1,40 @@
 <html>
-  <head>
-    <title>Coming Soon</title>
-	<style>
-	  .fluffy {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-		opacity: 0.15;
-        filter: alpha(opacity=15);
-      }
-	  body {
-        background-color: black;
-      }
-	</style>
-  </head>
-  
-  <body>
-    <img src="fluffy.png" class="fluffy">
-  </body>
+	<head>
+		<title>Coming Soon</title>
+		<style>
+			.fluffy {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				height: 100%;
+				overflow: hidden;
+				opacity: 0.15;
+				filter: alpha(opacity=15);
+			}
+
+			body {
+				background-color: black;
+			}
+
+			.container {
+				height: 100%;
+				position: relative;
+				text-align: center;
+				color: white;
+			}
+
+			.bottom-left {
+				position: absolute;
+				bottom: 8px;
+				left: 16px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<img src="fluffy.png" class="fluffy">
+			<div class="bottom-left">Soon&trade;</div>
+		</div>
+	</body>
 </html>
